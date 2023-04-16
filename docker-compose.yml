@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  echoastromovflo:
+    image: echoastromovflo:0.5.7
+    build: .
+    networks:
+      - echoastromovflo
+    ports:
+      - 9999:80
+
+networks:
+  echoastromovflo:
+

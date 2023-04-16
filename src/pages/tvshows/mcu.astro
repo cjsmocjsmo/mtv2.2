@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/LayoutPage.astro";
+import LokiImg from '../../../images/mcu/loki.avif';
+import HawkeyeImg from '../../../images/mcu/Hawkeye.avif'
+import IAmGrootImg from '../../../images/mcu/iamgroot.avif'
+import FalconWinterSoldierImg from '../../../images/mcu/falconwintersoldier.avif';
+import MSMarvelImg from '../../../images/mcu/ms_marvel.avif'
+import SheHulkImg from '../../../images/mcu/shehulk.avif';
+import WandaVisionImg from '../../../images/mcu/wandavision.avif';
+import MoonKnightImg from '../../../images/mcu/moonknight.avif';
+import LokiCard from '../../components/mcu/LokiCard.astro';
+import HawkeyeCard from '../../components/mcu/HawkEyeCard.astro';
+import IAmGrootCard from '../../components/mcu/IAmGrootCard.astro';
+import FalconWinterSoldierCard from "../../components/mcu/FalconWinterSoldierCard.astro";
+import MSMarvelCard from '../../components/mcu/MSMarvelCard.astro';
+import SheHulkCard from '../../components/mcu/SheHulkCard.astro';
+import WandaVisionCard from '../../components/mcu/WandaVisionCard.astro';
+import MoonKnightCard from "../../components/mcu/MoonKnightCard.astro";
+import Playercontrols from "../../components/playercontrols.astro";
+---
+
+<Layout title="MCU">
+    <main>
+        <div class="grid xxsm:grid-cols-2 xsm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 items-center">
+            <LokiCard title="Loki" src={LokiImg} />
+            <IAmGrootCard title="I Am Groot" src={IAmGrootImg} />
+            <FalconWinterSoldierCard title="Falcon Winter Soldier" src={FalconWinterSoldierImg} />
+            <MSMarvelCard title="Ms Marvel" src={MSMarvelImg} />
+            <WandaVisionCard title="Wanda Vision" src={WandaVisionImg} />
+            <MoonKnightCard title="Moon Knight" src={MoonKnightImg} />
+            <HawkeyeCard title="Hawk Eye" src={HawkeyeImg} />
+            <SheHulkCard title="She Hulk" src={SheHulkImg} />
+        </div>
+        <Playercontrols />
+    </main>
+</Layout>

@@ -1,0 +1,34 @@
+---
+import Layout from "../../layouts/LayoutPage.astro";
+import AndorImg from '../../../images/starwars/Andor.avif';
+import AndorCard from "../../components/starwars/AndorCard.astro";
+import BadBatchImg from '../../../images/starwars/badbatch.avif';
+import BadBatchCard from "../../components/starwars/BadBatchCard.astro";
+import BookOfBobaFettImg from '../../../images/starwars/book_of_boba_fett.avif';
+import BookOfBobaFettCard from "../../components/starwars/BookOfBobaFettCard.astro";
+import MandalorianImg from '../../../images/starwars/mandalorian.avif';
+import MandalorianCard from "../../components/starwars/MandalorianCard.astro";
+import ObiWanKenobiImg from '../../../images/starwars/obi-wankenobi.avif';
+import ObiWanKenobiCard from "../../components/starwars/ObiWanKenobiCard.astro";
+import VisionsImg from '../../../images/starwars/VisionsThumb.avif';
+import VisionsCard from "../../components/starwars/VisionsCard.astro";
+import TalesOfTheJedi from "../../components/starwars/TalesOfTheJedi.astro";
+import TalesOfTheJediImg from "../../../images/starwars/talesofthejedi.avif"
+
+import Playercontrols from "../../components/playercontrols.astro";
+---
+
+<Layout title="MCU">
+    <main>
+        <div class="grid xxsm:grid-cols-2 xsm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 items-center">
+            <AndorCard title="Andor" src={AndorImg} />
+            <BadBatchCard title="Bad Batch" src={BadBatchImg} />
+            <BookOfBobaFettCard title="Boba Fett" src={BookOfBobaFettImg} />
+            <MandalorianCard title="Mandalorian" src={MandalorianImg} />
+            <TalesOfTheJedi title="Talse Of The Jedi" src={TalesOfTheJediImg} />
+            <ObiWanKenobiCard title="Obi Wan Kenobi" src={ObiWanKenobiImg} />
+            <VisionsCard title="Visions" src={VisionsImg} />
+        </div>
+        <Playercontrols />
+    </main>
+</Layout>
