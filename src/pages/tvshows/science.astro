@@ -1,0 +1,16 @@
+---
+import Layout from "../../layouts/LayoutPage.astro";
+import PHPlanet from '../../../images/prehistoricplanet.avif';
+import PHPlanetCard from "../../components/science/PHPlanet/PHPlanetCard.astro";
+
+---
+
+<Layout title="1923">
+    <main>
+        <div class="grid xxsm:grid-cols-2 xsm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 items-center">
+            <PHPlanetCard src={PHPlanet} title="Prehistoric Planet" />
+            
+        </div>
+        <!-- <Playercontrols /> -->
+    </main>
+</Layout>
