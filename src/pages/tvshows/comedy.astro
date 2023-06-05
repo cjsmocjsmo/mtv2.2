@@ -2,15 +2,15 @@
 import Layout from "../../layouts/LayoutPage.astro";
 import FooBarImg from '../../../images/fubar.webp';
 import FooBarCard from "../../components/comedy/FooBarCard.astro";
-
+import Playercontrols from "../../components/playercontrols.astro";
 ---
 
 <Layout title="FooBar">
     <main>
-        <div class="flex flex-row justify-center items-center">
+        <div class="flex mt-26 justify-center items-center">
             <FooBarCard src={FooBarImg} title="FooBar" />
             
         </div>
-        <!-- <Playercontrols /> -->
+        <Playercontrols />
     </main>
 </Layout>
