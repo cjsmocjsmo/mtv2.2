@@ -22,7 +22,8 @@ import RaisedByWolvesImg from '../../../images/scifi/raisedbywolves.avif';
 import RaisedByWolvesCard from "../../components/scifi/RaisedByWolvesCard.astro";
 import TheLastOfUsImg from "../../../images/scifi/lastofus.avif";
 import TheLastOfUsCard from "../../components/scifi/TheLastOfUsCard.astro";
-
+import SiloImg from "../../../images/Silo.webp";
+import SiloCard from "../../components/scifi/SiloCard.astro"
 
 
 import Playercontrols from "../../components/playercontrols.astro";
@@ -31,18 +32,22 @@ import Playercontrols from "../../components/playercontrols.astro";
 <Layout title="SciFi">
     <main>
         <div class="grid xxsm:grid-cols-2 xsm:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 items-center">
+            <SiloCard title="Silo" src={SiloImg}/>
+            <TheLastOfUsCard title="The Last Of Us" src={TheLastOfUsImg} />
+            <FoundationCard title="Foundation" src={FoundationImg} />
             <AlienWorldsCard title="Alien Worlds" src={AlienWorldsImg} />
             <AlteredCarbonCard title="Altered Carbon" src={AlteredCarbonImg} />
             <CowboyBeBopCard title="Cowboy BeBop" src={CowboyBeBopImg} />
 			<ForAllManKindCard title="For All Mankind" src={ForAllManKindImg} />
-			<FoundationCard title="Foundation" src={FoundationImg} />
+			
             <LostInSpaceCard title="Lost In Space" src={LostInSpaceImg} />
             
             <RaisedByWolvesCard title="Raised By Wolves" src={RaisedByWolvesImg} />
             <NightSkyCard title="Night Sky" src={NightSkyImg} />
-            <TheLastOfUsCard title="The Last Of Us" src={TheLastOfUsImg} />
+            
             <OrvilleCard title="Orville" src={OrvilleImg} />
             <HaloCard title="Halo" src={HaloImg} />
+            
         </div>
         <Playercontrols />
     </main>
